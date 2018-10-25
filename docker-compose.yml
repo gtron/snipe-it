@@ -14,7 +14,7 @@ services:
     links: 
       - snipedb:snipedb
   snipedb:
-    image: mysql
+    image: mysql:8.0.3
     environment:
       - MYSQL_ROOT_PASSWORD=rootpass
       - MYSQL_DATABASE=snipe
